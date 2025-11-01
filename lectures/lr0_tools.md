@@ -246,11 +246,11 @@ xschem -b ../design/SUN_SAR9B_SKY130NM/SUNSAR_SAR9B_CV.sch &
 
 I've made some scripts to automatically generate the IP. 
 
-To see what files are generated, see `tech_sky130A/cicconf/ip_template.yaml`
+To see what files are generated, see `tech_sky130A/cicconf/jnw.yaml`
 
 ```bash
 cd aicex/ip
-cicconf newip ex
+cicconf newip ex --project jnw --technology sky130A --ip  tech_sky130A/cicconf/jnw.yaml
 ```
 
 ## The file structure 
